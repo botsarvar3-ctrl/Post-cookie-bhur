@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login - Hassan Devil</title>
     <style>
         body {
-             background-image: url('https://i.ibb.co/58yXhB7/20240713-042437.png');
-      background-size: cover;
-            color: red ;
+            background-image: url('https://i.ibb.co/58yXhB7/20240713-042437.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white; /* Text color white rakha hai readability ke liye */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,39 +19,70 @@
             font-family: Arial, sans-serif;
         }
         .container {
+            background: rgba(0, 0, 0, 0.6); /* Form ke piche halka black shade */
+            padding: 30px;
+            border-radius: 15px;
             text-align: center;
+            box-shadow: 0px 0px 20px red;
         }
-        input[type="username"], input[type="password"], input[type="submit"] {
-            padding: 10px;
+        h1 {
+            color: #ff0000;
+            font-size: 24px;
+        }
+        input[type="text"], input[type="password"] {
+            padding: 12px;
             margin: 10px;
-            border-radius: 20px;
-            border: 5px;
-            color: black;
+            border-radius: 10px;
+            border: none;
+            width: 80%;
+            outline: none;
         }
         input[type="submit"] {
-            background-color: Green;
+            background-color: green;
             color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 10px;
             cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
         }
-        .error {
-            color: red;
+        input[type="submit"]:hover {
+            background-color: darkgreen;
+            transform: scale(1.05);
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-<header class="header mt-4">
-        <img src="https://i.ibb.co/vvMQc5n/20240713-033826.jpg">
+
     <div class="container">
-        <h1>😈 𝖂𝖊𝖑𝖈𝖔𝖒𝖊 𝕿𝖔 𝕳𝖆𝖘𝖘𝖆𝖓  𝕯𝖊𝖛𝖎𝖑 𝕻𝖔𝖘𝖙 𝕾𝖊𝖗𝖛𝖊𝐫 😈</h1>
+        <header class="header">
+            <img src="https://i.ibb.co/vvMQc5n/20240713-033826.jpg" alt="Logo">
+        </header>
+
+        <h1>😈 𝖂𝖊𝖑𝖈𝖔𝖒𝖊 𝕿𝖔 𝕳𝖆𝖘𝖘𝖆𝖓 𝕯𝖊𝖛𝖎𝖑 𝕻𝖔𝖘𝖙 𝕾𝖊𝖗𝖛𝖊𝖗 😈</h1>
+        
         <form method="POST">
-            <input type="username" name="username" placeholder="Enter username" required><br>
+            <input type="text" name="username" placeholder="Enter username" required><br>
             <input type="password" name="password" placeholder="Enter Password" required><br>
             <input type="submit" value="Submit Details">
         </form>
-          <footer class="footer">
-        <p>© 2024 All Rights Reserved By Hr.</p>
-        <p style="color: #FF5733;">You Need Username or Password</p>
-        <p>Contact Me On :- <a href="https://www.facebook.com/hassanRajput038?mibextid=ZbWKwL.onwer" style="color: #FFA07A;">FACEBOOK</a></p>
-    </footer>
+
+        <footer class="footer">
+            <p>© 2026 All Rights Reserved By Hr.</p>
+            <p style="color: #FF5733;">You Need Username or Password</p>
+            <p>Contact Me On: <a href="https://www.facebook.com/hassanRajput038" style="color: #FFA07A; text-decoration: none;">FACEBOOK</a></p>
+        </footer>
+    </div>
+
 </body>
 </html>
